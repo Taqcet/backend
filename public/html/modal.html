@@ -1,0 +1,119 @@
+<html style="background: rgba(0,0,0,0.2)">
+    <head>
+        <link rel="stylesheet" href="/stylesheets/checkout.css">
+        <link rel="stylesheet" href="/fonts/sharp_sans/stylesheet.css">
+    </head>
+   <body style="padding: 0">
+        <div class="modal">
+       <div class="modal-background"></div>
+       <div class="modal-content">
+           <img src="/images/logo.png" class="logo"/>
+           <h1 style="text-align: center;">Pay Later with Taqcet</h1>
+           <div id="taqcet-auth-form">
+               <p class="po">With simple clicks you can purchase your products and pay later on installments</p>
+                <br/>
+               <input id="taqcet-input-modal"
+                      placeholder="Enter your National ID"
+                      class="input"
+                      type="number"
+                      name="nationalID"/>
+               <div style="padding-top: 20px; text-align: center;">
+                   <button style="min-width:73%; border:1px solid cornflowerblue;"
+                           id="taqcet-auth-button" type="button" class="button is-primary">
+                        Authorize Payment
+                       <span style="font-style: normal; padding-left: 5px;"> > </span>
+                   </button>
+                   <button style="min-width:25%;"
+                           id="taqcet-remove-modal" class="button is-danger " type="button">
+                       Close
+                   </button>
+               </div>
+           </div>
+           <div id="taqcet-loading" style="display: none;text-align: center">
+               <div class="loader loader--style1" title="0">
+                   <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+  <path opacity="0.2" fill="#000" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
+    s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
+    c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"/>
+  <path fill="#000" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
+    C22.32,8.481,24.301,9.057,26.013,10.047z">
+    <animateTransform attributeType="xml"
+      attributeName="transform"
+      type="rotate"
+      from="0 20 20"
+      to="360 20 20"
+      dur="0.5s"
+      repeatCount="indefinite"/>
+    </path>
+  </svg>
+               </div>
+                <h4>Authorizing</h4>
+                <div id="taqcet-loading-wait">
+                    <p>Please wait ...</p>
+                </div>
+               <div id="taqcet-loading-authorize" style="display: none;">
+                    <p><b>Please Open Your App and Authorize the purchase</b></p>
+               </div>
+               <div>
+                   <button id="taqcet-cancel-request"
+                           class="button is-danger"
+                           style="width: 80%; margin: auto; display:block;"
+                           type="button">
+                       Cancel Request
+                   </button>
+               </div>
+           </div>
+           <div id="taqcet-error" style="color:red; margin-top: 20px; text-align: center">
+
+           </div>
+
+           <div id="taqcet-auth-success" style="display:none;text-align: center;">
+               <h2 class="title green">
+                   Your Payment is Successful
+               </h2>
+           </div>
+
+           <div id="taqcet-auth-cancel" style="display:none;text-align: center;">
+               <div>
+                   <h2 class="title red">
+                       Your Payment has been Rejected
+                   </h2>
+                   <button id="taqcet-cancel-request-2"
+                           class="button is-danger is-outlined"
+                           style="width: 80%; margin: auto; display:block;"
+                           type="button">
+                       Acknowledge
+                   </button>
+               </div>
+           </div>
+
+           <div id="taqcet-explain">
+               <!--<div>-->
+                   <!--<h4 class="exp-header">New on Taqcet</h4>-->
+               <!--</div>-->
+               <div  class="exp-container">
+                   <div class="exp-item">
+                       <div class="exp-title"><span>1</span> Download the App</div>
+                       <p>You can find the app on Google Play or Apple Store</p>
+                   </div>
+                   <div class="exp-item">
+                       <div class="exp-title"><span>2</span> Register</div>
+                       <p>Use your app to register to the payment method</p>
+                   </div>
+                   <div class="exp-item">
+                       <div class="exp-title"> <span>3</span> Enter your National ID</div>
+                       <p>Enter your National ID in input bar above</p>
+                   </div>
+                   <div class="exp-item">
+                       <div class="exp-title"><span>4</span> Authorize</div>
+                       <p>Use your app to authorize the payment</p>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+   </body>
+    <script src="/javascripts/checkout-modal.js"></script>
+</html>
+

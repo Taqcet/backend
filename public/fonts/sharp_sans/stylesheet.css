@@ -1,0 +1,27 @@
+@font-face {
+	font-family: 'Sharp Sans';
+	src: url('/fonts/sharp_sans/Sharp-Medium.eot');
+	src: url('/fonts/sharp_sans/Sharp-Medium.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/sharp_sans/Sharp-Medium.woff') format('woff'),
+		url('/fonts/sharp_sans/Sharp-Medium.ttf') format('truetype'),
+		url('/fonts/sharp_sans/Sharp-Medium.svg#SharpSansNo1-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Sharp Sans';
+	src: url('/fonts/sharp_sans/Sharp-BookItalic.eot');
+	src: url('/fonts/sharp_sans/Sharp-BookItalic.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/sharp_sans/Sharp-BookItalic.woff') format('woff'),
+		url('/fonts/sharp_sans/Sharp-BookItalic.ttf') format('truetype'),
+		url('/fonts/sharp_sans/Sharp-BookItalic.svg#SharpSansNo1-BookItalic') format('svg');
+	font-weight: 400;
+	font-style: italic;
+}
+
+
+
+
+
+
